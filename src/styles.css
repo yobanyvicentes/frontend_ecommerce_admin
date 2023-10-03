@@ -1,0 +1,13 @@
+body{
+    background-color: rgb(70, 70, 73);
+}
+
+.card-login{
+    height: 370px;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 400px;
+    background-color: rgba(0.5,0.5,0.5,0.6);
+    color: white;
+}
+
