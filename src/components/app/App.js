@@ -10,7 +10,9 @@ import { UpdateBrand } from '../brand/UpdateBrand';
 import { ViewCategory } from '../category/ViewCategory';
 import { UpdateCategory } from '../category/UpdateCategory';
 import { ViewProduct } from '../product/ViewProduct';
-import {  UpdateProduct } from '../product/UpdateProduct';
+import { UpdateProduct } from '../product/UpdateProduct';
+import { ViewUser } from '../user/ViewUser';
+import { UpdateUser } from '../user/UpdateUser';
 
 export const App = () => {
 
@@ -29,6 +31,8 @@ export const App = () => {
                 <Route exact path='/category/edit/:categoryId' component={UpdateCategory} />
                 <Route exact path='/product' component={ViewProduct} />
                 <Route exact path='/product/edit/:productId' component={UpdateProduct } />
+                <Route exact path='/user' component={ViewUser} />
+                <Route exact path='/user/edit/:userId' component={UpdateUser } />
                 <Redirect to='/' />
             </Switch>
     </Router>

@@ -22,7 +22,7 @@ export const getUserById = (userId) => {
     })
 }
 export const putUser = (userId, data) => {
-    return axiosInstance.put(`user/${userId}`,data,  {
+    return axiosInstance.put(`user/edit/${userId}`,data,  {
         headers:{
             'Content-type' : 'application/json'
         }
