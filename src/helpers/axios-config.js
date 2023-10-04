@@ -18,7 +18,7 @@ try {
 }
 
 export const axiosInstance = axios.create({
-  baseURL: "http://localhost:4000/",
+  baseURL: "https://back-admin-ecommerce.onrender.com/",
   headers: {
     "access-token": token,
   },
