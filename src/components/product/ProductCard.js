@@ -9,12 +9,6 @@ export const ProductCard = () => {
 
   const listarProducts = async () => {
     try {
-      Swal.fire({
-        allowOutsideClick: false,
-        title: 'Cargando....',
-        text: 'Por favor espere mientras se crea el nuevo activo',
-        timer: 1000//milisegundos
-      });
       Swal.showLoading();
       const { data } = await getProducts();
       setProducts(data);
