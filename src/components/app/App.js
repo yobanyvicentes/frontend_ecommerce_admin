@@ -13,6 +13,7 @@ import { ViewProduct } from '../product/ViewProduct';
 import { UpdateProduct } from '../product/UpdateProduct';
 import { ViewUser } from '../user/ViewUser';
 import { UpdateUser } from '../user/UpdateUser';
+import { ProductCard } from '../product/ProductCard';
 
 export const App = () => {
 
@@ -25,6 +26,7 @@ export const App = () => {
     return <Router>
             <Header />
             <Switch>
+                <Route exact path='/' component={ProductCard} />
                 <Route exact path='/brand' component={ViewBrand} />
                 <Route exact path='/brand/edit/:brandId' component={UpdateBrand} />
                 <Route exact path='/category' component={ViewCategory} />
